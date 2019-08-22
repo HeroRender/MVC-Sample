@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<p>Via viewbag </p> 
+<textarea>@ViewBag.Sample</textarea>
+
+<hr />
+
+<p>Via JQuery </p> 
+<textarea id="sample"></textarea>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $.get("@Url.Action("sampleCall", "Home")", function (data) {
+            console.table(data.data)
+            $('#sample').text(JSON.stringify(data.data));
+        });
+    })
+</script>

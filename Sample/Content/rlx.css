@@ -1,0 +1,273 @@
+﻿.bold {
+    font-weight:bolder;
+}
+#return-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	display: none;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#return-to-top i {
+	color: #fff;
+	margin: 0;
+	position: relative;
+	left: 16px;
+	top: 13px;
+	font-size: 19px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#return-to-top:hover {
+	background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+	color: #fff;
+	top: 5px;
+}
+
+
+.top2 {
+	padding-top:50px;
+	z-index:10;
+}
+
+
+
+/*=========================*/
+.huge {
+	font-size: 40px;
+}
+.panel-green {
+	border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+	border-color: #5cb85c;
+	color: #fff;
+	background-color: #5cb85c;
+}
+
+.panel-green a {
+	color: #5cb85c;
+}
+
+.panel-green a:hover {
+	color: #3d8b3d;
+}
+
+.panel-red {
+	border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+	border-color: #d9534f;
+	color: #fff;
+	background-color: #d9534f;
+}
+
+.panel-red a {
+	color: #d9534f;
+}
+
+.panel-red a:hover {
+	color: #b52b27;
+}
+
+.panel-yellow {
+	border-color: #f0ad4e;
+}
+
+.panel-yellow .panel-heading {
+	border-color: #f0ad4e;
+	color: #fff;
+	background-color: #f0ad4e;
+}
+
+.panel-yellow a {
+	color: #f0ad4e;
+}
+
+.panel-yellow a:hover {
+	color: #df8a13;
+}
+
+.MainBody {
+	padding-top: 120px;
+	padding-bottom: 20px;
+}
+
+.MainBody2 {
+	padding-top: 65px;
+	padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+	white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default
+input,
+select,
+textarea {
+	max-width: 280px;
+}
+ */
+.list-inline {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-rw {
+	background-color: #d0272e !important;
+}
+
+.text-white *,.text-white>button, .text-white>a,.text-light{
+	color:#FFF !important;
+
+}
+
+.text-red *{
+	color:#d0272e !important;
+
+}
+
+.bg-danger {
+   background-color: #d53343 !important;
+}
+
+.bg-lightRed {
+	background-color: #fa9996 !important;
+}
+
+.bg-lightYellow {
+	background-color:#ffe494 !important;
+   /* background-color:#f7ca8b !important;*/
+}
+.bg-success {
+  background-color: #28a745 !important;
+}
+
+.bg-skyblue {
+  background-color: #76b8ff !important;
+}
+
+.bg-info {
+  background-color: #17a2b8 !important;
+}
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+.bg-gray {
+  background-color: #a7a7a7 !important;
+}
+
+
+
+.table > tbody > tr.success > td
+,.label-success{
+  background-color:#5cb85c;
+  color:#222
+}
+
+.table-hover > tbody > tr.success:hover > td{
+  background-color: #3d8b3d;
+  color:#222;
+}
+
+
+.table > tbody > tr.warning > td 
+,.label-warning {
+  background-color: #ffe494;
+  color: #222;
+}
+
+.table-hover > tbody > tr.warning:hover > td {
+  background-color: #df8a13;
+  color: #222;
+}
+
+
+
+.table > tbody > tr.danger > td
+,.label-danger{
+  background-color:  #d9534f;
+  color:#fff;
+}
+
+.table-hover > tbody > tr.danger:hover > td{
+  background-color: #b52b27;
+  color:#fff;
+}
+
+
+.EmpName {
+	padding-right:20px !important;
+	margin-right:20px !important;
+}
+
+.MainContent {
+	min-height:300px;
+}
+
+.bg-white {
+	background-color:#fff;
+}
+
+.print-table {
+	width:100%;
+	min-width: 260mm;
+
+}
+
+
+@media print {
+  @page { 
+		  margin-top: 0;  
+		  margin-bottom: 0;
+		  size: auto; 
+
+  }
+}
+
+
+.tblFrozen th:first-child,.tblFrozen td:first-child
+{
+  position:sticky;
+  left:0px;
+ 
+}
+
+.tblFrozen {
+    white-space: nowrap;
+}
